@@ -1,0 +1,47 @@
+#%RAML 1.0
+title: bhavaniapi
+version: v1
+mediaType: 
+- application/json
+protocols: [http,https]
+
+/shipment:
+  post:
+    body:
+      application/json:
+        example:
+          "ordernumber": "1234"
+    responses:
+            200:
+                    body:
+                            application/json:
+                                    example:
+                                            "status" : "success"     
+
+/truck:
+  post:
+   body:
+     application/xml:
+      example:
+        <order>
+           <phone>redmi</phone>
+       </order>
+   responses:
+          200:
+                body:
+                      application/xml:
+                        example:
+                          <status>success</status>
+                                 
+  
+
+           
+
+
+
+
+
+      
+        
+  
+                                                                                                                  
